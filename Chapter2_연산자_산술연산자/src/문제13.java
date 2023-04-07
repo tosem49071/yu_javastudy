@@ -18,7 +18,7 @@ public class 문제13 {
 		b=scan.nextInt();
 		c=scan.nextInt();
 		
-		System.out.println("%d"%d+%d=%d", a,b,c,a*b+c);
+		System.out.printf("%d*%d+%d=%d",a,b,c,a*b+c);
 	    
 	    
 
