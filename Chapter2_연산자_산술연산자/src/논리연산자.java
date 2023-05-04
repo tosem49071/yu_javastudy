@@ -56,11 +56,6 @@ public class 논리연산자 {
 		
 		System.out.println(bCheck);
 		System.out.println("b="+b);*/
-
-		/*boolean bCheck= (a<b) || ++b==a;
-		
-		System.out.println(bCheck);
-		System.out.println("b="+b);*/
 		
 		/*int a=100;
 		int b=99;

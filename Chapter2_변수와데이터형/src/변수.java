@@ -87,7 +87,7 @@
  *            => 빨간색으로 표시 
  *         5) 길이는 제한이 없다 => (3~7글자)
  *            변수 => 의미가 약간 부여
- *            a => id, name... adress, phone...
+ *            a => id, name... address, phone...
  *       =======================================
  *       과일 가게에는 사과 5, 배 10, 바나나 7, 딸기 1
  *    저장시에는 반드시 앞에 메모리 크기 지정
@@ -101,7 +101,7 @@
  *       2byte => short // C언어와 호환
  *       4byte => int // 평상시에 사용하는 모든 정수 (default)
  *       System.out.println(100)
- *       8byte => long //
+ *       8byte => long
  *     실수 저장 방법
  *       4byte => float  ==>  소수점 6자리
  *       8byte => double (default)   ==>  소수점 15자리
@@ -149,8 +149,7 @@
  *    
  *    데이터형 크기
  *    byte < short < int < long < float < double
- *           char
- *                              
+ *           char                
  */
 public class 변수 {
 
@@ -164,26 +163,26 @@ public class 변수 {
 		//long a=10000000000;  ==> 에러		
 	    //long a=10000000000l; ==> 숫자 뒤에 'l/L'을 써줘야 long데이터로 인식
 		
-		//int a=123456;
-		//double b=123456.78;
-		//int c=(int)((b-a)*100);
-		//System.out.println(c);  
+		/*int a=123456;
+		double b=123456.78;
+		int c=(int)((b-a)*100);
+		System.out.println(c);  */
 		// 모든 숫자는 int 인식
 		//*****
-//	    byte byte_value=127;// -128~127 = 오른쪽에서 왼쪽 이동 (뒤에서부터 읽어와라)
+  	    byte byte_value=127;// -128~127 = 오른쪽에서 왼쪽 이동 (뒤에서부터 읽어와라)
 	    // 127을 byte_value라는 공간 첨부해라
-//	    short short_value=32767; // -32768~32767
+	    short short_value=32767; // -32768~32767
 	    //*****
-//	    int int_value=2140000000;
+	    int int_value=2140000000;
 	    //****
-//	    long long_value=99999999999999999l;
+	    long long_value=99999999999999999l;
 	    // int/long의 구분은 l(L)
-//	    char char_value='홍';
-//	    float float_value=10.5f;
+	    char char_value='홍';
+	    float float_value=10.5f;
 	    //*****
-//	    double double_value=10.5;// 초기값     (d를 줘도 되고 안줘도 됨 = 생략가능)
+	    double double_value=10.5;// 초기값     (d를 줘도 되고 안줘도 됨 = 생략가능)
 	    //*****
-//	    boolean boolean_value=true;
+	    boolean boolean_value=true;
 	    // 모든 정수는 int
 	    // 모든 실수는 double
 	    // 지역변수는 반드시 초기값을 부여한 후에 사용이 가능
@@ -214,14 +213,12 @@ public class 변수 {
 	     */  
 	    // 변수 => 데이터형 변수명=값  int A=10;
 	    // 상수 => 데이터형 변수명=값  final int b=20;
-/*	    int kor=80;
+	    int kor=80;
 	    kor=90;
 	    kor=100;
 	    
 	    final int score=70;
-	    
-	    final int SCORE=70;*/
-	    // = 대입 , == 같다  != 같지않다 (JavaScript) => =, ===, !,,
+	    // = 대입 , == 같다  != 같지않다 (JavaScript) => =, ===, !==
 	    // 오라클 (=)
 	    /*
 	     * 변수

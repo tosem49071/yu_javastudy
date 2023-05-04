@@ -9,7 +9,7 @@
  *      ----------------------
  *       0(1) 1 1 1 1 1 1 1
  *      ----------------------
- *      
+ *        |
  *       부호비트 (0:양수, 1:음수)
  *       => 컴퓨터에서 모든 숫자는 int 인식, 실수 => double
  *       데이터형
@@ -24,6 +24,7 @@
  *                    -3~2
  *                    
  *                    -3   -2   -1   0   1   2   => 3 ==> -3 
+ *                    
  *       -----------------------------------------------------------
  *       (X) short                   O (C언어 호환)
  *       -----------------------------------------------------------
@@ -33,9 +34,9 @@
  *       long                                               O 
  *                 int / long의 구분은 l(L)
  *       -----------------------------------------------------------
- *       (X) 실수
+ *       실수
  *       -----------------------------------------------------------
- *       float                                 O
+ *       (X) float                                 O
  *       -----------------------------------------------------------
  *       double                default                      O
  *                 double / float 구분은 f(F) 
@@ -90,7 +91,6 @@
  *           double d=10; d=? 10.0
  *           double a='A'; a=? 65.0
  */
-
 public class 데이터형정리 {
 
 	public static void main(String[] args) {
@@ -99,15 +99,17 @@ public class 데이터형정리 {
 		//System.out.println(b);
 		System.out.println(0);
 		System.out.println((int)'0');
-		System.out.println(0-10);
-		System.out.println('0'-10);
+		System.out.println(0-10); // -10
+		System.out.println('0'-10); //38
 		double d=10;
 		System.out.println(d);
 		double e='A';
 	    System.out.println(e);
-		
-		
-
+	    
+	    int a=100;
+	    System.out.println(a);
+	    a+=100;
+	    System.out.println(100);
 	}
 
 }
