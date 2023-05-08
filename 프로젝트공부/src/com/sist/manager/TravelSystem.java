@@ -28,27 +28,48 @@ public class TravelSystem {
 			}catch(Exception e) {}
 		}
 	}
-	public List<TravelVO> TCastegoryData(int cno)//
+	
+	public List<TravelVO> travelListData(int page)
 	{
-		List<TravelVO> mList=
-				new ArrayList<>();
+		List<TravelVO> glist = new ArrayList<TravelVO>();
+		int j=0; // 20개씩 나눠주는 변수
+		int rowsize=20;
+		int start=(page-1)*rowsize;
+		for (int i=0;i<list.size();i++)
+		{
+			if(j<rowsize && i>=start)
+			{
+				glist.add(list.get(i));
+				j++;
+			}
+		}
+		return glist;
+	}
+	public int travelTotalPage()
+	{
+		return (int)(Math.ceil(list.size()/20.0));
+	}
+	public List<TravelVO> seoulCategoryData(int cno)
+	{
+		List<TravelVO> sList=
+				new ArrayList<TravelVO>();
 		for(TravelVO vo:list)
 		{
 			if(vo.getCno()==cno)
 			{
 				System.out.println(vo.getNo()+""+vo.getTitle());
-				mList.add(vo);
+				sList.add(vo);
 			}
 		}
-		return mList;
+		return sList;
 	}
-	public List<TravelVO> travelFindData(String title)
+List<TravelVO> travelFindData(CharSequence curpage)
 	{
 		List<TravelVO> mList=
 				new ArrayList<>();
 		for(TravelVO vo:list)
 		{
-			if(vo.getTitle().contains(title))
+			if(vo.getTitle().contains(curpage))
 			{
 				mList.add(vo);
 			}
@@ -75,5 +96,9 @@ public class TravelSystem {
 			String cno=in.readLine();
 			ts.TCastegoryData(Integer.parseInt(cno));
 		}catch(Exception ex) {}
+	}
+	public int travelTotalPage() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

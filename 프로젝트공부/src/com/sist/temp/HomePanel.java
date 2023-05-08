@@ -8,7 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import com.sist.manager.GenieMusicVO;
+import com.sist.manager.TravelVO;
 
 public class HomePanel extends JPanel {
 	PosterCard[] pcs=new PosterCard[20];
@@ -31,11 +31,11 @@ public class HomePanel extends JPanel {
 		p.setBounds(10, 720, 730, 35);
 		add(p);
 	}
-	public void cardPrint(List<GenieMusicVO> list)
+	public void cardPrint(List<TravelVO> list)
 	{
 		
 		int i=0;
-		for(GenieMusicVO vo:list)
+		for(TravelVO vo:list)
 		{
 			pcs[i]=new PosterCard(vo);
 			pan.add(pcs[i]);
@@ -43,7 +43,7 @@ public class HomePanel extends JPanel {
 		}
 		
 	}
-	public void cardInit(List<GenieMusicVO> list)
+	public void cardInit(List<TravelVO> list)
 	{
 		/*for(int i=0;i<list.size();i++)
 		{
