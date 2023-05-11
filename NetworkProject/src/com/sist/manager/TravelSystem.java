@@ -28,7 +28,59 @@ public class TravelSystem {
 			}catch(Exception e) {}
 		}
 	}
-	public void TCastegoryData(int cno)//
+	public List<TravelVO> travellisListData(int page)
+	{
+		List<TravelVO> gList=
+				new ArrayList<TravelVO>();
+		int j=0; // 20개씩 나눠주는 변수
+		int rowSize=20;
+		int start=(page-1)*rowSize;
+		/*
+		 *    1page => 0~19
+		 *    2page => 20~39
+		 */
+		for(int i=0;i<list.size();i++)
+		{
+			if(j<rowSize && i>=start)
+			{
+				gList.add(list.get(i));
+				j++;
+			}
+		}
+		return gList;
+	}
+	public int travelTotalPage()
+	{
+		return (int)(Math.ceil(list.size()/20.0));
+	}
+	public List<TravelVO> TCastegoryData(int cno)//
+	{
+		List<TravelVO> mList=
+				new ArrayList<>();
+		for(TravelVO vo:list)
+		{
+			if(vo.getCno()==cno)
+			{
+				System.out.println(vo.getNo()+""+vo.getTitle());
+				mList.add(vo);
+			}
+		}
+		return mList;
+	}
+	public List<TravelVO> travelFindData(String title)
+	{
+		List<TravelVO> mList=
+				new ArrayList<>();
+		for(TravelVO vo:list)
+		{
+			if(vo.getTitle().contains(title))
+			{
+				mList.add(vo);
+			}
+		}
+		return mList;
+	}
+	/*public void TCastegoryData(int cno)//
 	{
 		for(TravelVO vo:list)
 		{
@@ -37,6 +89,19 @@ public class TravelSystem {
 				System.out.println(vo.getNo()+"."+vo.getTitle());
 			}
 		}
+	}*/
+	public TravelVO travelDetailData(String title)
+	{
+		TravelVO vo=new TravelVO();
+		for(TravelVO tvo:list)
+		{
+			if(tvo.getTitle().equals(title))
+			{
+				vo=tvo;
+				break;
+			}
+		}
+		return vo;
 	}
 	public static void main(String[] args) {
 		TravelSystem ts=new TravelSystem();

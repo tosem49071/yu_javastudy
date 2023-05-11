@@ -186,7 +186,7 @@ public class NetworkMain extends JFrame implements ActionListener,Runnable{
 			try
 			{
 				// 서버 연결
-				s=new Socket("211.238.142.118",3456);
+				s=new Socket("",3456);
 				// 서버 컴퓨터 => IP
 				// 211.238.142.()
 				// 읽는 위치 / 쓰는 위치
