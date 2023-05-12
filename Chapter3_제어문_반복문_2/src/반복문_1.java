@@ -1,5 +1,3 @@
-import javax.annotation.processing.SupportedSourceVersion;
-
 /*
  *    반복문 : 유사한 내용이 여러번 반복할때 주로 사용
  *           영화목록, 맛집목록, 메인화면 .. 상세보기 (if)
@@ -78,13 +76,14 @@ public class 반복문_1 {
 		 *    -- 2번이 false면 종료
 		 */
 		/* 
-		 *  i=1 i<=10 true
+		 *  i=1 i<=10 true => i=2
 		 *  --
 		 *  --
 		 *  --
 		 *  i=10 i<=10 true => i=11
 		 *  i=11 i<=10 false => 종료
-		 *  for(int i=1;i<=10;i++)
+		 *  int i=0;
+		 *  for(i=1;i<=10;i++)
 		 *  {
 		 *      ------
 		 *  }// i는 여기까지 사용
@@ -112,19 +111,17 @@ public class 반복문_1 {
 			System.out.print(i+" ");
 		}
 
-
-		System.out.println("==============");
+		System.out.println("\n==============");
 		//A~Z 출력 ==> 문제 A를 26개 출력
 		/*for(char c='A';c<='Z';c++)
 		{
-			System.out.println(c+" ");
+			System.out.print(c+" ");
 		}*/
-		
 		char c='A';
 		for(int i=0;i<26;i++)
 		{
 			System.out.print(c++ +" ");
-		} //c=삭제
+		} // c=삭제
 		
 		/*for(int i=0;i<26;i++)
 		{
@@ -169,13 +166,13 @@ public class 반복문_1 {
 		/*
 		 *  do~while : 후조건 => 무조건 1번은 수행한다
 		 *  형식)
-		 *      초기값 ======>1
+		 *      초기값 ======> 1
 		 *      do
 		 *      {
-		 *         반복실행문장 ==>2
-		 *         증가식  ===>3
-		 *      }while(조건식) ==>4 ==> 4 => true => 2번 이동
-		 *                                 false => 종료
+		 *         반복실행문장 ==> 2
+		 *         증가식  ===> 3
+		 *      }while(조건식) ==> 4 => true => 2번 이동
+		 *                            false => 종료
 		 *                                 
 		 *    int i=1;
 		 *    do
@@ -186,7 +183,7 @@ public class 반복문_1 {
 		 *      => i=2 i=3 i=4 ... i=11
 		 *    }while(i<=10);
 		 */
-		
+		System.out.println("\n========= do~while ===========");
 		i=1;
 		do
 		{
@@ -200,7 +197,6 @@ public class 반복문_1 {
 			System.out.print(c++ + " ");
 			i++;
 		}while(i<26);
-		
 		
 
 	}

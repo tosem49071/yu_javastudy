@@ -55,9 +55,9 @@ public class 반복제어문_1 {
 		while(i<=10)
 		{
 			if(i==5)
-				continue; // 조건식으로 이동 => 
+				break; // 조건식으로 이동 => 
 			              // 게임 : 잘못된 입력이 있는 경우 처음으로 다시 돌아갈때 주로 사용
-			System.out.println(i+" ");
+			System.out.print(i+" ");
 			i++;
 		}
 		System.out.println("프로그램 종료");

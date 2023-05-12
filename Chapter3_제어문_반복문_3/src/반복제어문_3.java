@@ -8,21 +8,29 @@ public class 반복제어문_3 {
         int kor,eng,math;
         while(true)
         {
-        	System.out.println("국어 점수 입력(0~100):");
+        	System.out.print("국어 점수 입력(0~100):");
         	kor=scan.nextInt();
         	if(kor<0 || kor>100)
         	{
         		System.out.println("잘못된 점수입니다");
         		continue;
         	}
-        	System.out.println("영어 점수 입력(0~100):");
+        	break;
+        }
+        while(true)
+        {
+        	System.out.print("영어 점수 입력(0~100):");
         	eng=scan.nextInt();
         	if(eng<0 || eng>100)
         	{
         		System.out.println("잘못된 점수입니다");
         		continue;
         	}
-        	System.out.println("수학 점수 입력(0~100):");
+        	break;
+        }
+        while(true)
+        {
+        	System.out.print("수학 점수 입력(0~100):");
         	math=scan.nextInt();
         	if(math<0 || math>100)
         	{
@@ -31,11 +39,12 @@ public class 반복제어문_3 {
         	}
         	break;
         }
+        
         int total=kor+eng+math;
         double avg=total/3.0;
         
         System.out.println("총점:"+total);
         System.out.printf("평균:%.2f", avg);
-	}
+	    }
 
 }

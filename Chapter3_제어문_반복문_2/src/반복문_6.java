@@ -9,7 +9,6 @@
  *              반복 실행문장 (2)
  *              증가식 (3)
  *           }while(조건식); => 증가된 변수로 조건검색 
- *            
  */
 import java.util.Scanner;
 public class 반복문_6 {

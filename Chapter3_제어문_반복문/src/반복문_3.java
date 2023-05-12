@@ -38,7 +38,6 @@ public class 반복문_3 {
 	    System.out.println("1~100까지 5의 배수의 갯수:"+count1);
 	    System.out.println("1~100까지 7의 배수의 합:"+sum2);
 	    System.out.println("1~100까지 7의 배수의 갯수:"+count2);
-
 	}
 
 }

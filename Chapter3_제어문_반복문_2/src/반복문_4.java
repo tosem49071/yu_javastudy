@@ -12,6 +12,7 @@ public class 반복문_4 {
 			while((i=fr.read())!=-1) //-1 파일 종료
 			{
 				System.out.print((char)i);
+				// 네트워크로 파일 전송
 			}
 		}catch(Exception ex) {}
 
