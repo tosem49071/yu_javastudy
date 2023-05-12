@@ -68,18 +68,16 @@
  *           5 % -2 = 1
  *           -5 % -2 = -1
  *           ---------------
- *           
- *                
  */
 // 사용자가 정수 세개를 입력 => 결과값 (1. 총점, 2. 평균)
-// 외부에서 클래스를 불러온다
+import java.util.Scanner;// 외부에서 클래스를 불러온다
 // 키보드로부터 입력된 값을 얻어오는 클래스 : Scanner (scanf())
 // BufferedReader => 예외처리 
 public class 산술연산자 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*Scanner scan=new Scanner(System.in);//클래스 선언)
+		Scanner scan=new Scanner(System.in);//클래스 선언)
 		//           --- 동적 메모리 할당
 		//                     ------------ 키보드 입력값 
 		System.out.print("국어점수 입력:");
@@ -99,7 +97,7 @@ public class 산술연산자 {
 		//결과값 출력
 		System.out.println("총점:"+total);
 		//System.out.println("평균:"+avg);
-		System.out.printf("평균:%.2f",avg);	*/
+		System.out.printf("평균:%.2f",avg);
 		
 
 	}
