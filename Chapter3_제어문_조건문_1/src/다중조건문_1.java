@@ -50,11 +50,11 @@ public class 다중조건문_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan=new Scanner(System.in);
-		System.out.println("첫번째 정수 입력");
+		System.out.print("첫번째 정수 입력");
 		int num1=scan.nextInt();
-		System.out.println("두번째 정수 입력");
+		System.out.print("두번째 정수 입력");
 		int num2=scan.nextInt();
-		System.out.println("연산자 입력(+,-,*,/):");
+		System.out.print("연산자 입력(+,-,*,/):");
 		char op=scan.next().charAt(0);// 문자열중에 첫번재에 있는 문자를 추출
 		//+-*/ => charAt(1) => 자바의 단점 : char는 받을 수 없다 (문자열)
 		//경우 +, -, *, /, 다른 문자 입력시 (else)

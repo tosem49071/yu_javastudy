@@ -18,7 +18,7 @@ public class 다중조건문_2 {
 		//정수 : nextInt(), 실수 : nextDouble(), nextBoolean()
 		//next() : 문자열 => char는 존재하지 않는다
 		//Scanner는 도스에서만 사용이 가능
-		System.out.println("세개의 정수 입력(10 20 30):");
+		System.out.print("세개의 정수 입력(10 20 30):");
 		int kor=scan.nextInt();
 		int eng=scan.nextInt();
 		int math=scan.nextInt();

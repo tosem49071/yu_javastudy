@@ -24,11 +24,11 @@ public class 조건문_4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan=new Scanner(System.in);
-		System.out.println("첫번째 정수 입력:");
+		System.out.print("첫번째 정수 입력:");
 		int num1=scan.nextInt();
-		System.out.println("두번째 정수 입력:");
+		System.out.print("두번째 정수 입력:");
 		int num2=scan.nextInt();
-		System.out.println("연산자를 입력(+,-,*,/):");
+		System.out.print("연산자를 입력(+,-,*,/):");
 		char op=scan.next().charAt(0);// 문자열을 받아서 char를 한개 가지고 온다
 		
 		System.out.println("num1:"+num1);

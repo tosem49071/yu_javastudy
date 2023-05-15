@@ -41,7 +41,7 @@ public class 선택문_4 {
 		int com=(int)(Math.random()*3); //0(가위), 1(바위), 2(보)
 		// 사용자 입력
 		Scanner scan=new Scanner(System.in);
-		System.out.println("가위(0),바위(1),보(2) 입력:");
+		System.out.print("가위(0),바위(1),보(2) 입력:");
 		int user=scan.nextInt();
 		
 		//출력
@@ -50,7 +50,7 @@ public class 선택문_4 {
 		case 0:
 			System.out.println("컴퓨터:가위");
 			break;//종료
-			//breeak 밑에는 소스 코딩이 있는 경우에 오류 발생
+			//break 밑에는 소스 코딩이 있는 경우에 오류 발생
 			//System.out.println("aaa"); => 이렇게 쓸 경우 오류 발생
 		case 1:
 			System.out.println("컴퓨터:바위");

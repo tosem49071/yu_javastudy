@@ -5,7 +5,7 @@ public class 다중조건문_4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan=new Scanner(System.in);
-		System.out.println("세개의 정수 입력(10 20 30):");
+		System.out.print("세개의 정수 입력(10 20 30):");
 		int kor=scan.nextInt();
 		int eng=scan.nextInt();
 		int math=scan.nextInt();

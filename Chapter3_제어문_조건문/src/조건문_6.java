@@ -9,7 +9,7 @@ public class 조건문_6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan=new Scanner(System.in);
-		System.out.println("년도 입력:");
+		System.out.print("년도 입력:");
 		int year=scan.nextInt();
 		
 		if((year%4==0 && year%100!=0) || (year%400==0))

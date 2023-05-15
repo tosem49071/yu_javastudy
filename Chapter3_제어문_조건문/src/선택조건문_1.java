@@ -22,7 +22,7 @@ public class 선택조건문_1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int no=(int)(Math.random()*2);//0,1  //()이 0~0.99니까 *하면 0~1.--- 여서 0,1이 나옴
-		char ch; // 이거는 뭐지? 왜 주는거지?
+		char ch;
 		if(no==0)                            //0이라면 대문자, 0이 아니면 소문자
 			ch=(char)((Math.random()*26)+65);//대문자
 	    else
