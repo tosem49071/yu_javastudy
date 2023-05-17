@@ -36,7 +36,7 @@ public class GameMain extends JFrame implements KeyListener{
 					gv.x=1024;
 				break;
 			case KeyEvent.VK_RIGHT:
-				break;
+				gv.x+=5;
 				if(gv.x>1024)
 					gv.x=0;
 				

@@ -22,7 +22,7 @@
  *     데이터 가공
  *     => 연산자
  *        단항연산자
- *         ++, (type), !
+ *         ++, (type)=>클래스의 형변환, !
  *         --- 전치/후치
  *        이항연산자
  *         +, -, *, /, %
@@ -59,18 +59,7 @@ public class 제어문_정리 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		class X {
-		      X() { System.out.print(1);  }
-		      X(int x) { this();  System.out.print(2); }
-		}
-
-		public class Y extends X {
-		      Y() { super(6);  System.out.print(3); }
-		      Y(int y) { this();  System.out.println(4); }
-		      public static void main(String[] args) {
-		          new Y(5);
-		      }
-		}
+		
 	}
 
 }

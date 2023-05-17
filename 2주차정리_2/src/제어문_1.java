@@ -11,6 +11,7 @@
  *           ---------------------------------
  *           단일 : 속도가 늦다 (독립적인 문장) => 중복적으로 수행
  *           ----------------------------------------
+ *           다중조건
  *           
  *           true/false를 나눠서 처리
  *           --------------------
@@ -135,7 +136,7 @@
  *              문장5
  *              
  *              
- *          switch()
+ *          switch(2)
  *          {
  *             case 1:
  *               int a=10;
@@ -155,6 +156,7 @@
  *      ------------ 목록, 페이징(화면출력)
  *      1) for : 반복횟수가 지정된 경우
  *      2) while : 반복횟수가 없는 경우
+ *       	=> 파일읽기, 데이터베이스
  *      3) do~while : 한번이상을 수행 ...
  *   3. 반복 제어문
  *      ------------ 페이징
@@ -241,6 +243,7 @@ public class 제어문_1 {
 		if(page==0)
 			page=1;
 		while(true)
+		{
 		int j=0;
 		int rowSize=10;
 		int pagecnt=(page*rowSize)-rowSize; //start
@@ -258,14 +261,25 @@ public class 제어문_1 {
 				System.out.println((i+1)+"."+title[i]);
 				j++;
 			}
-		}S
-		canner scan=new Scanner(System.in);
+		}
+		Scanner scan=new Scanner(System.in);
 		System.out.print("페이지 입력:");
 	    page=scan.nextInt();
 	    break;
-
-    System.out.println("while사용");
-    
+		}
+		
+		System.out.println("while사용");
+		try
+		{
+			//FileWriter : 파일 쓰기 , FileReader : 파일 읽기
+			FileReader fr=
+					new FileReader("C:\\javaDev\\javaStudy\\2주차정리_2\\src\\제어문_1.java");
+			int i=0;
+			while((i=fr.read())!=-1)
+			{
+				System.out.print((char)i);
+			}
+		}catch(Exception ex) {}    
 
 	}
 
