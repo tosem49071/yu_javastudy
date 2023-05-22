@@ -17,18 +17,18 @@
  *         => 가장 많이 사용되는 데이터형 : int, String
  *        => 사용법
  *            String name="홍길동";
- *            // String name=new String('')
+ *            // String name=new String("")
  *        => String에서 지원하는 메소드 (변경할 수 없다) = 표준화
- *           Math.random(), Math.ceil(10.5):올림, Math.round():반올림, ...
+ *           Math.random(), Math.ceil(10.5):올림, Math.round():반올림...
  *                          총페이지
  *           ------- 임의로 숫자 추출
  *           중요시 봐야할 것 => 메소드는 결과값을 받아서 처리
- *           1) 대문자 변환 toUppercase()
+ *           1) 대문자 변환 toUpperCase()
  *              String s="hello java";
  *              String result=s.toUpperCase()
  *              => result="HELLO JAVA"
  *           2) 소문자 변환 toLowerCase()
- *              String s="Hello Java"
+ *              String s="Hello Java";
  *              String result=s.toLowerCase()
  *              => result="hello java"
  *           3) 찾기

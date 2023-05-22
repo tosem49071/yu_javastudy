@@ -1,6 +1,5 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
 /*
  *   숫자 야구게임
  *   1. 컴퓨터 => 임의의 숫자 3개 발생 (1~9까지 중복없는 난수)
@@ -15,6 +14,10 @@ import java.util.Scanner;
  *      ---> 1S-1B
  *      3 6 9
  *      ---> 3S-0B
+ *      ----------
+ *      S:●
+ *      B:○
+ *      ----------
  */
 public class 배열응용_4 {
 

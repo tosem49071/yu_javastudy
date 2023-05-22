@@ -42,7 +42,7 @@ import java.util.Arrays;
  *        for(int i=10:arr)
  *        {
  *           
- *           
+ *           i=100;
  *        }
  *      = 초기값, 값을 변경시에는 일반 for문을 이용한다 (인덱스)
  */
@@ -54,7 +54,7 @@ public class 배열_1 {
 		/*
 		 *   int i=10;
 		 *   i=100;
-		 *   arr[0]
+		 *   arr[0] arr[1]
 		 *   [10, 20, 30, 40, 50]
 		 */
 		for(int i:arr)

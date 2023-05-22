@@ -24,7 +24,7 @@ public class 배열_4 {
 		/*
 		 *  for(int a:arr)
 		 */
-		// 출력용으로 사용 => 웹(브라우
+		// 출력용으로 사용 => 웹(브라우저)
 		for(int a:arr) // Vue,React
 		{
 			System.out.print(a+" ");

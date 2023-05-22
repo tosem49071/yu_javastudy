@@ -18,8 +18,6 @@ public class 배열응용_3 {
 				}
 			}
 		}*/
-		
-		
 		int su=0;//난수를 저장
 		boolean bCheck=false; // 중복여부 확인
 		for(int i=0;i<lotto.length;i++)

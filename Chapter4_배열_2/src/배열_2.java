@@ -3,7 +3,7 @@
  *    char c1~c10;
  *    char[] alpha=new char[10]
  *     알파벳 100000개 저장하는 공간을 만든다
- *     char c1~c2 100000; => 가장 큰 알파벳을 출력
+ *     char c1~c100000; => 가장 큰 알파벳을 출력
  *     => if(max<c2) ==> 99999
  *     char[] alpha=new char[100000]
  *     

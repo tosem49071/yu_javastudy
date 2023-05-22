@@ -3,7 +3,7 @@ public class 배열_2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr=new int[100];
+		int[] arr=new int[10];
 		for(int i=0;i<arr.length;i++)
 		{
 			arr[i]=(int)(Math.random()*100)+1;

@@ -57,8 +57,8 @@ public class 문자열_5 {
 		{
 			if(s.length()>37)
 			{
-				String ss=s.substring(0,34)+"...";
-				System.out.println(ss);
+				String s3=s.substring(0,34)+"...";
+				System.out.println(s3);
 			}
 			else
 			{
