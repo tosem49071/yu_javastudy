@@ -10,15 +10,19 @@
  *    시계 초침, 분침, 시침
  *        
  *    클래스
- *     = 변수 여러개 저장하는 공간 => 사용자정의 데이터형 (데이터형 클래스)
+ *    *** = 변수 여러개 저장하는 공간 => 사용자정의 데이터형 (데이터형 클래스)
  *       ~VO(Spring), ~DTO(MyBatis), ~Bean(JSP)
  *                     Data Transfer Object
  *       Value Object
- *     = 기능만 설정하는 클래스 : ~DAO, ~Service, ~Manager
+ *    *** = 기능만 설정하는 클래스 : ~DAO, ~Service, ~Manager
  *                  데이터베이스 연결, 브라우저 전송 ..., Jsoup (액션 클래스)
  *     = 변수+메소드 혼합 => 극히 드물다
  */
 // -- 커뮤니티 CURD(IUSD)
+/*
+ *   int[] no
+ *   String[] name
+ */
 class Board{
    	int no; //0
    	String name; //null

@@ -47,6 +47,10 @@ package com.sist.main;
  *       {
  *       	오라클에 저장
  *       }
+ *       
+ *       void memberJoin(Member m)
+ *       {
+ *       }
  */
 class Value{
 	int a=10;

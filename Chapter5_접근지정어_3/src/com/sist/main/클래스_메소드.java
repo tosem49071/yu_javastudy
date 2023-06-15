@@ -11,11 +11,11 @@ import static java.lang.Math.random;
  *    void method()
  *    {
  *    	return; // 자동 설정 (생략이 가능) => void에서만
- *    
+ *      ==> 중간에 존재할때도 있다
  *    }
  *    class A
  *    {
- *    	 a(){}
+ *    	 A(){}
  *    }
  */
 // Math클래스는 지원하는 모든 메소드가 static

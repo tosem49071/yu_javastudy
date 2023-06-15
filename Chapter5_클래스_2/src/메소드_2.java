@@ -18,6 +18,7 @@ public class 메소드_2 {
 		String[] ids= {"hong","park","shim","lee","kang"};
 		String[] pwds= {"1234","3456","4567","5678","6789"};
 		String[] names= {"홍길동","박문수","심청이","이순신","강감찬"};
+		// 파일, 오라클, 메모리에 저장 (휘발성)
 		
 		// id검색
 		int index=0;

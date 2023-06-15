@@ -23,7 +23,7 @@
  *                DB : WHERE name LIKE '홍%' //홍으로 시작하는 모든 문자
  *             3) endsWith : 끝문자열
  *                boolean endsWith(String s)
- *                DB : WHERE name LIKE '홍%'
+ *                DB : WHERE name LIKE '%홍'
  *         *** 4) contains : 포함
  *                boolean contains(String s)
  *                DB : WHERE name LIKE '%홍%'
@@ -88,7 +88,7 @@
  *                  ** new없이 저장이 가능 => 리플렉션
  *      
  *    1. 구성요소
- *       class ClassName
+ *       class ClassName : 클래스 선언부
  *       {
  *          ----------------
  *          변수(속성)
@@ -105,16 +105,25 @@
  *       }
  *       
  *    2. 구성요소 사용법
- *    ////////////////////////////////
- *       A a=new A();
+ *    	 1) 메모리에 저장
+ *          class A
+ *          {
+ *          	변수 / 메소드
+ *          }
+ *          
+ *          A a; 선언
+ *          a=new A();
+ *          
+ *       	A a=new A();
  *       
- *       class A
- *       {
- *          int sabun;
- *          String getNAme(){}
- *          int getSabun(){}
- *          void run(){}
- *       }
+ *      	 class A
+ *      	 {
+ *      	    int sabun;
+ *      		String name;
+ *      	    String getNAme(){}
+ *      	    int getSabun(){}
+ *      	    void run(){}
+ *      	 }
  *       
  *       A a=new A();
  *       ---
@@ -122,7 +131,8 @@
  *                    . => 메모리 주소 접근 연산자
  *       --a--
  *        100
- *       -----   new => 데이터메모리를 모아준다
+ *       ----- ↘  new => 데이터메모리를 모아준다
+ *       		   a
  *             100--------
  *                sabun 저장공간1
  *                name 저장공간 "홍길동"
@@ -137,8 +147,15 @@
  *    6. 예외처리
  *    --------------------
  *    API => 지정된 라이브러리 사용법
- */
-/*
+ *    
+ *    class Out
+ *    {
+ *    	int aa;
+ *    }
+ *    class System
+ *    {
+ *    	Out out=new Out();
+ *    }
  * 
  *    B b=new B();
  *    System.out.aa
@@ -149,7 +166,7 @@
  *    }
  *    class B
  *    {
- *       A a=new A();
+ *       A a=new A(); => has-a SPA
  *    }
  *    class C
  *    {

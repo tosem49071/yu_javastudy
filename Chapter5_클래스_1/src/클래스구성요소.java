@@ -222,8 +222,8 @@ public class 클래스구성요소 {
 	 *        static
 	 *     3) 추상 메소드 : 선언만 하는 메소드 (추상클래스, 인터페이스)
 	 *        abstract
-	 *     4) 증단 메소드 : 수정이 불가능한 메소드
-	 *        fianl
+	 *     4) 종단 메소드 : 수정이 불가능한 메소드
+	 *        final
 	 */
 	static int input(String subject)
 	{
@@ -321,8 +321,9 @@ public class 클래스구성요소 {
 		default:
 			score='F';			
 		}*/
-		char score=scoreGesan(avg);
-		System.out.println("학점:"+score);
+		//char score=scoreGesan(avg);
+		//System.out.println("학점:"+score);
+		scoreGesan(avg);
 		
 	}
 

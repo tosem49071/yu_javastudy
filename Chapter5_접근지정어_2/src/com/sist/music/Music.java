@@ -25,6 +25,7 @@ package com.sist.music;
  *         class B(int a,b) 8byte
  *         A > B X => 모든 크기는 4byte로 동일
  *         ---------- A와 B는 다른 클래스 => 크기를 가지지 않는다
+ *         float > long
  *         
  *         class A(int a,b)
  *         class B(int c) extends A
@@ -49,6 +50,8 @@ package com.sist.music;
  *          생성자, static, private, 초기화 블록(X)
  *       = 포함 => has-a (*********)
  */
+import java.util.*;
+
 public class Music {
 	private int rank;
 	private String state;

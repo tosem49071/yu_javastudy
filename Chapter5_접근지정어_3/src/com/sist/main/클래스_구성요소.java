@@ -130,6 +130,7 @@ package com.sist.main;
  *                     }
  *                  }
  *               4) 생성자 : 멤버변수, static변수 초기화가 가능
+ *                        => 가장 많이 사용된다
  *                  => this 사용이 가능
  *                  class A
  *                  {
@@ -171,7 +172,7 @@ package com.sist.main;
  *           1)void display(int a,int b,int c)
  *           2)void display(int a,double d,int c)
  *           3)void display(int a,int b,float f)
- *           4)void display(double a,double b,double c)
+ *      ***  4)void display(double a,double b,double c)
  *           
  *           => display(10.5,10,'C')
  *               double int char         ====> 4번 호출
@@ -239,10 +240,18 @@ package com.sist.main;
  *               검색 : 사용자는 검색어를 보낸다 => 찾은 모든 내용
  *               --------------------------------------
  *                   String[] find(String findData)
- *               상세 => 한개만 찾는다(
+ *               상세 => 한개만 찾는다 (번호)
+ *                   Movie detail(int 영화번호)
+ *               class Student
+ *               {
+ *                  --
+ *                  --
+ *                  --
+ *                  --
+ *                  --
+ *               }   
  *       ----------------------------------------------------------------
  *    }
- *    
  */
 class C
 {
@@ -253,7 +262,7 @@ class C
 // C c=new C(); ==> a,b
 class B extends C
 {
-	int a=20;
+	int aaa=20;
 	void display(int aa)
 	{
 		System.out.println(aa);
@@ -301,6 +310,10 @@ class A
 		b=2000;
 		System.out.println("static 생성자(변경 후): b="+b);
 	}
+	void aaa(int a)
+	{
+		
+	}
 }
 public class 클래스_구성요소 {
 
@@ -309,6 +322,7 @@ public class 클래스_구성요소 {
 		A aa=new A();
 		System.out.println(aa.a);
 		System.out.println(A.b);
+		aa.aaa(10);
 		
 		
 	}

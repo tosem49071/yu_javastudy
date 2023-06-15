@@ -200,7 +200,6 @@ public class 사용자정의_데이터형_4 {
 		System.out.println("노래명:"+music[no-1].title);
 		System.out.println("가수명:"+music[no-1].singer);
 		System.out.println("앨범"+music[no-1].album);
-		System.out.println("상태:"+music[no-1].state);
 		String s=music[no-1].state;
 		if(s.equals("유지"))
 			s="-";

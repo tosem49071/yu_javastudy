@@ -24,7 +24,7 @@ public class StudentSystem {
 		for(int i=0;i<std.length;i++)
 		{
 			std[i]=new Student(); //배열은 모든 저장공간이 null값 (메모리 연결)
-			//     -------------- 메모리 연결하는 부분  //얘 안들어가면 안된다
+			//     -------------- 메모리 연결하는 부분
 			System.out.print("학번 입력:");
 			std[i].setHakbun(scan.nextInt());
 			System.out.print("이름 입력:");
@@ -38,7 +38,7 @@ public class StudentSystem {
 		}
 	}
 	//1-1. 출력
-	public void display() // defautl => com.sist.main4안에서만 접근이 가능  //public을 붙여야 모든 메소드에서 사용 가능???
+	public void display() // defautl => com.sist.main4안에서만 접근이 가능 
 	{                 // com.sist.main5
 		for(Student s:std)
 		{

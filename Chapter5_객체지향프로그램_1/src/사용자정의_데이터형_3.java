@@ -6,12 +6,13 @@
  */
 class Category
 {
+	int no;
 	String poster;
 	String title;
 	String subject;
 }
 /*
- * 
+ *    멤버변수 (인스턴스변수)
  *    ----------------------
  *    1. 기본형
  *    2. 배열

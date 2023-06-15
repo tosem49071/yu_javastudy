@@ -56,6 +56,11 @@ package com.sist.main;
  *                   int[] arr2=arr;
  *                   
  *                   class A => 데이터형
+ *                   A a
+ *                   int a
+ *                   String s
+ *                   class String
+ *                   substring()
  *                   A display()
  *                   {
  *                      A a=new A();
@@ -70,7 +75,7 @@ package com.sist.main;
  *                      return s
  *                   }
  *                   
- *                   display()
+ *                   int display()
  *                   {
  *                      return 10
  *                   }

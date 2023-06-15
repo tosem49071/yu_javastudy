@@ -123,7 +123,7 @@ public class BaseBallGame {
     }
 	public static void main(String[] args) {
 		BaseBallGame b=new BaseBallGame();
-		b.rand();
+		//b.rand();
 		//System.out.println(Arrays.toString(b.com));
 		b.process();
 	}

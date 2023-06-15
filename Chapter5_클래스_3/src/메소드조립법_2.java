@@ -1,8 +1,8 @@
-import java.util.Scanner;
-
 // 달력
 // 1. 년도, 월 ==>
 // println(){}
+import java.util.Calendar;
+import java.util.Scanner;
 public class 메소드조립법_2 {
 	//입력
 	static int input(String msg)

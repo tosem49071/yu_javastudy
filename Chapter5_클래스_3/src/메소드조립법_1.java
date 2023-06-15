@@ -51,6 +51,7 @@ import java.util.Arrays;
 public class 메소드조립법_1 {
 	static void sort(int[] arr,int n) // n=1 ASC(순위결정...), n=2 DESC(목록...)
 	{
+		//Arrays.sort(arr);
 		for(int i=0;i<arr.length-1;i++)
 		{
 			for(int j=i+1;j<arr.length;j++)

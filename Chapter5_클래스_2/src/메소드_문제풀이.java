@@ -1,4 +1,19 @@
 /*
+ *  1. 1~10까지 출력하는 메소드 구현
+ *  void method1()
+	2. 1~10까지 합을 구하는 메소드 구현
+	int method2()
+	3. 1~n까지 합을 구하는 메소드 구현\
+	int method3(int n)
+	4. 두 정수를 나눗셈 결과를 구해주는 메소드 구현
+	double method4(int a,int b)
+	5. 문자열의 소문자를 대문자로 바꿔주는 메소드 구현
+	String method5(String s)
+	6. 문자열을 거꾸로 출력하는 메소드 구현
+	String method6(String s)
+
+ */
+/*
  *    메소드 : 클래스의 구성 요소 (동적)
  *    -----
  *      1) 특정 기능을 수행하는 명령문의 집합
@@ -63,15 +78,21 @@
  *         넘겨준 데이터를 받아서 저장
  *         int result=add(10,20);
  *             ------ 30
- *         *** 메소드를 호출시에는 메소드는 처음부터 끝까지 수행한후에 호출된 위치로
+ *         *** 메소드를 호출시에는 메소드는 처음부터 끝까지 수행한후에 호출된 위치로 온다
  *      메소드 만드는 방법
  *      --------------
  *      리턴형     매개변수 
- *        
+ *        O         O => String substring(int s,int e)
+ *                       String s="Hello Java";
+ *                       String ss=s.substring(0,5)
+ *        O         X
+ *        X         O
+ *        X         X
+ *       -------------
  *         
  */
 
-public class 문제_2 {
+public class 메소드_문제풀이{
 	// 1. 1~10까지 출력하는 메소드 구현
     static void method1()
     {
@@ -124,7 +145,7 @@ public class 문제_2 {
     // 5. 문자열의 소문자를 대문자로 바꿔주는 메소드 구현
     static String method5(String s)
     {
-    	String result="";
+    	/*String result="";
     	for(int i=0;i<s.length();i++)
     	{
     		if(s.charAt(i)>='A' && s.charAt(i)<='Z')
@@ -132,16 +153,20 @@ public class 문제_2 {
     		else if(s.charAt(i)>='a' && s.charAt(i)<='z')
     			result+=(char)(s.charAt(i)=32);// -32(소->대)
     			
-    	}
-    	return result;
+    	}*/
+    	return s.toUpperCase();
     }
     // 6. 문자열을 거꾸로 출력하는 메소드 구현
-    static String method6(String s)
+    static void method6(String s)
     {
-    	for(int i=s.length()-1;i>=10;i++)
+    	/*for(int i=s.length()-1;i>=0;i--)
     	{
     		System.out.print(s.charAt(i));
     	}
+    	StringBuffer sb=new StringBuffer();
+    	sb.append(s);
+    	String ss=sb.reverse().toString();
+    	System.out.println(ss);*/
     }
     
 	public static void main(String[] args) {
@@ -157,14 +182,13 @@ public class 문제_2 {
 		
 		method1();
 		int sum=method2();
+		System.out.println("sum"+sum);
 		method3(100);
 		double d=method4(10, 3);
 		System.out.printf("%.2f\n",d);
 		String s=method5("Hello Java");
+		System.out.println(s);
 		method6("Hello Java");
-	    		
-		
-
 	}
 
 }

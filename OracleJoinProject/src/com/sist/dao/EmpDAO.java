@@ -14,7 +14,7 @@ public class EmpDAO {
 		// properties 읽기
 		try
 		{
-			FileReader fr=new FileReader("C:\\javaDev\\javaStudy\\OracleJoinProject\\src\\com\\sist\\dao\\db.properties");
+			FileReader fr=new FileReader("C:\\Users\\SIST\\git\\java\\OracleJoinProject\\src\\com\\sist\\dao\\db.properties");
 			Properties prop=new Properties();
 			prop.load(fr);
 			driver=prop.getProperty("driver");

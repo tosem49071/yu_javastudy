@@ -1,6 +1,7 @@
 package com.sist.main;
 class Member{
 	private String name; // 메모리에 저장
+	private static Member mem;
 	// 메모리에 저장된 데이터 읽기
 	public String getName() {
 		return name;

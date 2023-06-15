@@ -32,10 +32,34 @@ package com.sist.main;
  *       
  *       디폴트 => 명시적 => 초기블록 => 생성자
  *       int a=0 int a=10 int a=100 int a=1000
+ */
+/*
+ * 	   class Student{
+ * 			 int hakbun;
+ * 			 String name;
+ * 			 
+ * 			 {
+ * 				hakbun=100; //연산처리, 제어문, 파일 읽기 ...
+ * 			 }
+ * 
  *       Student() {
  *          hakbun=1000;
  *       }
  */
+/*
+ *      class A
+ *      {
+ *        void a(){}
+ *        void b(int a){}
+ *      }
+ */
+class A
+{
+	int a=10;
+	int b=30;
+	int c=a+b;
+	//A(){} A(int a) A(int b,int c)
+}
 
 class Student{
 	int hakbun;
@@ -43,15 +67,19 @@ class Student{
 	String name;
 	Student() {
 	// TODO Auto=generated constructor stub
-	System.out.println("Sutdent() Call...");
-	hakbun=1;
-	name="홍길동";
+		System.out.println("Sutdent() Call...");
+		hakbun=1;
+		name="홍길동";
+		try
+		{
+		
+		}catch(Exception ex) {}
     }
-	Student(int h,String n)
-	{
-		hakbun=h;
-		name=n;
-	}
+		Student(int h,String n)
+		{
+			hakbun=h;
+			name=n;
+		}
 }
 public class 생성자_2 {
 

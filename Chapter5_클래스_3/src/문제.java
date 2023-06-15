@@ -43,6 +43,7 @@ import java.util.Scanner;
  *              예) 오라클에서 데이터를 읽기
  *                 ------------------
  *                 => 브라우저로 보낸다
+ *                 MVC
  *               => 자바 : 데이터관리
  *                  Java / Oracle / Spring
  *               => 자바스크립트 : 이벤트 처리 (브라우저)
@@ -54,6 +55,11 @@ import java.util.Scanner;
  *                 return arr; // 배열 주소만 넘겨준다
  *              }
  *              ==> int[] arr=method()
+ *              String method()
+ *              {
+ *              	return "";
+ *              }
+ *              ==> String s=method()
  *              
  *        2) 결과값이 없는 경우
  *           void method()
@@ -90,6 +96,7 @@ import java.util.Scanner;
  */
 
 public class 문제 {
+		// 정수를 입력받아서 이진법을 출력하는 메소드
 	static void process1() 
 	{
 		//입력
@@ -123,27 +130,33 @@ public class 문제 {
 	}
 	// 임의의 정수를 배열로 생성해서 입력하고 정렬하는 프로그램 작성
 	/*
-	 *  *
-	 *  **
-	 *  ***
-	 *  ****
+	 *  ★
+	 *  ★★
+	 *  ★★★
+	 *  ★★★★
 	 *  
 	 *  for(int i=1;i<=4;i++)
 	 *  {
 	 *     for(int j=1;j<=i;j++)
 	 *     {
-	 *        System.out.print("*");
+	 *        System.out.print("★");
 	 *     }
 	 *     System.out.println();
 	 *  }
+	 *  
+	 *  System.out.println("★");
+     *  System.out.println("★★");
+     *  System.out.println("★★★");
+     *  System.out.println("★★★★");
 	 */
 	
 	static void process2()
 	{
-		int[5]=(int)(Math.random()*100)+1;
-		
+		// select sort
+		// 버블 sort
+		// api sort Arrays.sort()		
 	}
-	
+	// 년도를 입력받아 윤년 여부를 확인하는 프로그램 작성
 	static void process3()
 	{
 		Scanner scan=new Scanner(System.in);
@@ -158,8 +171,9 @@ public class 문제 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//process1();
-		process2();
-		//process3();
+		//process2();
+		
+		process3();
 		
 
 	}

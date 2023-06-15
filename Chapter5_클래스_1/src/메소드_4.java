@@ -18,7 +18,7 @@ import java.util.Arrays;
  *      => 검색어를 입력받아서 검색된 노래명들을 받아서 출력
  *                            -------
  *      static String[] find(String fd)
- *   4) 5정수를 넘겨주고 정렬된 정수를 받는다(
+ *   4) 5정수를 넘겨주고 정렬된 정수를 받는다
  *      static (int[]) sort(int a,int b,int c,int d,int e) //배열을 사용해서 넘긴다
  *      = static (int[]) sort(int[] arr)
  *      결과값이 여러개일 경우에는 배열을 이용한다
